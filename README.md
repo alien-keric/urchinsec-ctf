@@ -1,5 +1,5 @@
 # urchinsec-ctf
-scripties that i was using during the ctf to play and which were usufull for me when solving a A URCHINSEC ctf 
+scripties and files that i have used during the ctf I  played with my team and which were usufull for me when solving a A URCHINSEC ctf 
 
 
 
