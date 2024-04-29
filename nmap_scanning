@@ -1,0 +1,124 @@
+# Nmap 7.94SVN scan initiated Sat Apr 27 09:24:04 2024 as: nmap -sC -sV -p- -oN nmap_scanning -vvv -T4 45.79.66.97
+Increasing send delay for 45.79.66.97 from 0 to 5 due to 43 out of 107 dropped probes since last increase.
+Increasing send delay for 45.79.66.97 from 5 to 10 due to 36 out of 89 dropped probes since last increase.
+Warning: 45.79.66.97 giving up on port because retransmission cap hit (6).
+Nmap scan report for billsys.urc (45.79.66.97)
+Host is up, received conn-refused (0.29s latency).
+Scanned at 2024-04-27 09:24:05 EDT for 1824s
+Not shown: 65504 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE       REASON      VERSION
+22/tcp    open     ssh           syn-ack     OpenSSH 9.7 (protocol 2.0)
+| ssh-hostkey: 
+|   256 9e:cd:9e:38:58:35:4c:24:1a:01:29:0d:9d:26:fe:2b (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPZD/3HT6hGrRdQ4z0BS6lu2XqgEtY1r7AEScbyYKusX7aQhr+0YDlcaMI0oRXc9O4UGAKJeq3S33SYRVGC9/JY=
+|   256 50:35:25:83:7d:aa:d7:42:43:d4:bb:fa:e8:6c:12:bb (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGfzj7zTf+AKQJjI2pkIykWPFOi758+OjXvkKwd6oqxA
+25/tcp    filtered smtp          no-response
+53/tcp    open     domain        syn-ack     (generic dns response: SERVFAIL)
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|_    bind
+80/tcp    open     http          syn-ack     nginx 1.24.0
+|_http-title: My Portfolio
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: nginx/1.24.0
+465/tcp   filtered smtps         no-response
+587/tcp   filtered submission    no-response
+2525/tcp  filtered ms-v-worlds   no-response
+3000/tcp  open     ppp?          syn-ack
+| fingerprint-strings: 
+|   GenericLines, Help, RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Cache-Control: max-age=0, private, must-revalidate, no-transform
+|     Content-Type: text/html; charset=utf-8
+|     Set-Cookie: i_like_gitea=97308b83109b7ef2; Path=/; HttpOnly; SameSite=Lax
+|     Set-Cookie: _csrf=VLH_8zx_Rj5xY-TB3mrxaBs1_uY6MTcxNDIyNTk2NzM0MDA2NDI1NQ; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Sat, 27 Apr 2024 13:52:47 GMT
+|     <!DOCTYPE html>
+|     <html lang="en-US" data-theme="gitea-auto">
+|     <head>
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <title>Gitea: Git with a cup of tea</title>
+|     <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiR2l0ZWE6IEdpdCB3aXRoIGEgY3VwIG9mIHRlYSIsInNob3J0X25hbWUiOiJHaXRlYTogR2l0IHdpdGggYSBjdXAgb2YgdGVhIiwic3RhcnRfdXJsIjoiaHR0cDovL2dpdC5iaWxsc3lzLnVyYy8iLCJpY29ucyI6W3sic3JjIjoiaHR0cDovL2dpdC5iaWxsc3lzLnVyYy9hc3NldHMvaW1nL2xvZ28ucG5nIiwidHlwZSI6ImltYWdlL3BuZyIsInNpem
+|   HTTPOptions: 
+|     HTTP/1.0 405 Method Not Allowed
+|     Allow: HEAD
+|     Allow: GET
+|     Cache-Control: max-age=0, private, must-revalidate, no-transform
+|     Set-Cookie: i_like_gitea=d6564e9594b3f054; Path=/; HttpOnly; SameSite=Lax
+|     Set-Cookie: _csrf=dD7OKCC4batH89P1Og5k1jtF38U6MTcxNDIyNTk3NDE1MTIwNjUyOQ; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Sat, 27 Apr 2024 13:52:54 GMT
+|_    Content-Length: 0
+3306/tcp  open     mysql         syn-ack     MariaDB (unauthorized)
+3333/tcp  open     nagios-nsca   syn-ack     Nagios NSCA
+3615/tcp  filtered start-network no-response
+5355/tcp  filtered llmnr         no-response
+6192/tcp  filtered unknown       no-response
+7854/tcp  filtered unknown       no-response
+10711/tcp filtered unknown       no-response
+11208/tcp filtered wifree        no-response
+12372/tcp filtered unknown       no-response
+13428/tcp filtered unknown       no-response
+13739/tcp filtered unknown       no-response
+13768/tcp filtered unknown       no-response
+16033/tcp filtered unknown       no-response
+17641/tcp filtered unknown       no-response
+30313/tcp filtered unknown       no-response
+35787/tcp filtered unknown       no-response
+37483/tcp filtered gdrive-sync   no-response
+40103/tcp filtered unknown       no-response
+56455/tcp filtered unknown       no-response
+58849/tcp filtered unknown       no-response
+60547/tcp filtered unknown       no-response
+63445/tcp filtered unknown       no-response
+63866/tcp filtered unknown       no-response
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-TCP:V=7.94SVN%I=7%D=4/27%Time=662D0333%P=x86_64-pc-linux-gnu%r(D
+SF:NSVersionBindReqTCP,20,"\0\x1e\0\x06\x81\x82\0\x01\0\0\0\0\0\0\x07versi
+SF:on\x04bind\0\0\x10\0\x03");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3000-TCP:V=7.94SVN%I=7%D=4/27%Time=662D032E%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(GetRequest,2A86,"HTTP/1\.0\x20200\x20OK\r\nCache-Contr
+SF:ol:\x20max-age=0,\x20private,\x20must-revalidate,\x20no-transform\r\nCo
+SF:ntent-Type:\x20text/html;\x20charset=utf-8\r\nSet-Cookie:\x20i_like_git
+SF:ea=97308b83109b7ef2;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\nSet-Coo
+SF:kie:\x20_csrf=VLH_8zx_Rj5xY-TB3mrxaBs1_uY6MTcxNDIyNTk2NzM0MDA2NDI1NQ;\x
+SF:20Path=/;\x20Max-Age=86400;\x20HttpOnly;\x20SameSite=Lax\r\nX-Frame-Opt
+SF:ions:\x20SAMEORIGIN\r\nDate:\x20Sat,\x2027\x20Apr\x202024\x2013:52:47\x
+SF:20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"en-US\"\x20data-theme=
+SF:\"gitea-auto\">\n<head>\n\t<meta\x20name=\"viewport\"\x20content=\"widt
+SF:h=device-width,\x20initial-scale=1\">\n\t<title>Gitea:\x20Git\x20with\x
+SF:20a\x20cup\x20of\x20tea</title>\n\t<link\x20rel=\"manifest\"\x20href=\"
+SF:data:application/json;base64,eyJuYW1lIjoiR2l0ZWE6IEdpdCB3aXRoIGEgY3VwIG
+SF:9mIHRlYSIsInNob3J0X25hbWUiOiJHaXRlYTogR2l0IHdpdGggYSBjdXAgb2YgdGVhIiwic
+SF:3RhcnRfdXJsIjoiaHR0cDovL2dpdC5iaWxsc3lzLnVyYy8iLCJpY29ucyI6W3sic3JjIjoi
+SF:aHR0cDovL2dpdC5iaWxsc3lzLnVyYy9hc3NldHMvaW1nL2xvZ28ucG5nIiwidHlwZSI6Iml
+SF:tYWdlL3BuZyIsInNpem")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n
+SF:Content-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r
+SF:\n\r\n400\x20Bad\x20Request")%r(HTTPOptions,197,"HTTP/1\.0\x20405\x20Me
+SF:thod\x20Not\x20Allowed\r\nAllow:\x20HEAD\r\nAllow:\x20GET\r\nCache-Cont
+SF:rol:\x20max-age=0,\x20private,\x20must-revalidate,\x20no-transform\r\nS
+SF:et-Cookie:\x20i_like_gitea=d6564e9594b3f054;\x20Path=/;\x20HttpOnly;\x2
+SF:0SameSite=Lax\r\nSet-Cookie:\x20_csrf=dD7OKCC4batH89P1Og5k1jtF38U6MTcxN
+SF:DIyNTk3NDE1MTIwNjUyOQ;\x20Path=/;\x20Max-Age=86400;\x20HttpOnly;\x20Sam
+SF:eSite=Lax\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Sat,\x2027\x20A
+SF:pr\x202024\x2013:52:54\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(RTSPR
+SF:equest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/
+SF:plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Re
+SF:quest");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 27 09:54:29 2024 -- 1 IP address (1 host up) scanned in 1824.98 seconds

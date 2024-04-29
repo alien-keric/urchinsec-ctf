@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2024.2.1.3" exportTime="Sat Apr 27 08:33:44 EDT 2024">
+  <item>
+    <time>Sat Apr 27 08:33:23 EDT 2024</time>
+    <url><![CDATA[http://172.105.14.114:50016/?current_string=test&new_string=admin&given_text=%27%27&action=]]></url>
+    <host ip="172.105.14.114">172.105.14.114</host>
+    <port>50016</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/?current_string=test&new_string=admin&given_text=%27%27&action=]]></path>
+    <extension>null</extension>
+    <request base64="true"><![CDATA[R0VUIC8/Y3VycmVudF9zdHJpbmc9dGVzdCZuZXdfc3RyaW5nPWFkbWluJmdpdmVuX3RleHQ9JTI3JTI3JmFjdGlvbj0gSFRUUC8xLjENCkhvc3Q6IDE3Mi4xMDUuMTQuMTE0OjUwMDE2DQpVcGdyYWRlLUluc2VjdXJlLVJlcXVlc3RzOiAxDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTIzLjAuNjMxMi41OCBTYWZhcmkvNTM3LjM2DQpBY2NlcHQ6IHRleHQvaHRtbCxhcHBsaWNhdGlvbi94aHRtbCt4bWwsYXBwbGljYXRpb24veG1sO3E9MC45LGltYWdlL2F2aWYsaW1hZ2Uvd2VicCxpbWFnZS9hcG5nLCovKjtxPTAuOCxhcHBsaWNhdGlvbi9zaWduZWQtZXhjaGFuZ2U7dj1iMztxPTAuNw0KUmVmZXJlcjogaHR0cDovLzE3Mi4xMDUuMTQuMTE0OjUwMDE2Lw0KQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlLCBicg0KQWNjZXB0LUxhbmd1YWdlOiBlbi1VUyxlbjtxPTAuOQ0KQ29ubmVjdGlvbjogY2xvc2UNCg0K]]></request>
+    <status>200</status>
+    <responselength>1315</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="true"><![CDATA[SFRUUC8xLjEgMjAwIE9LDQpEYXRlOiBTYXQsIDI3IEFwciAyMDI0IDEyOjMzOjI0IEdNVA0KU2VydmVyOiBBcGFjaGUvMi40LjI1IChEZWJpYW4pDQpYLVBvd2VyZWQtQnk6IFBIUC81LjYuNDANClZhcnk6IEFjY2VwdC1FbmNvZGluZw0KQ29udGVudC1MZW5ndGg6IDEwOTcNCkNvbm5lY3Rpb246IGNsb3NlDQpDb250ZW50LVR5cGU6IHRleHQvaHRtbDsgY2hhcnNldD1VVEYtOA0KDQo8aHRtbD4KICAgIDxoZWFkPgogICAgICAgIDx0aXRsZT5DUyBQUk9KRUNUIDA2PC90aXRsZT4KICAgICAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9InN0eWxlLmNzcyIvPgogICAgPC9oZWFkPgogICAgPGJvZHk+CgogICAgICAgIDxkaXYgY2xhc3M9IndyYXBwZXIiPgogICAgICAgICAgICA8aDI+UEhQIFByYWN0aWNlPC9oMj4KICAgICAgICAgICAgPHA+VGhpcyBpcyBteSBwcmFjdGljZSBwcm9qZWN0IHRvIHJlcGxhY2UgYSBzdHJpbmcgd2l0aCBhIGdpdmVuIHRleHQuPC9wPgogICAgICAgICAgICA8YnI+CiAgICAgICAgICAgIAogICAgICAgICAgICA8Zm9ybSBtZXRob2Q9ImdldCIgYWN0aW9uPSIiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iaW5wdXQtZmllbGQiPgogICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9InRleHQiIG5hbWU9ImN1cnJlbnRfc3RyaW5nIj4KICAgICAgICAgICAgICAgIDxsYWJlbCBmb3I9ImN1cnJlbnRfc3RyaW5nIj5DdXJyZW50IHN0cmluZzwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iaW5wdXQtZmllbGQiPgogICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9InRleHQiIG5hbWU9Im5ld19zdHJpbmciPgogICAgICAgICAgICAgICAgPGxhYmVsIGZvcj0ibmV3X3N0cmluZyI+TmV3IHN0cmluZzwvbGFiZWw+PC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJpbnB1dC1maWVsZCI+CiAgICAgICAgICAgICAgICA8dGV4dGFyZWEgbmFtZT0iZ2l2ZW5fdGV4dCIgcm93cz0iNSI+PC90ZXh0YXJlYT4KICAgICAgICAgICAgICAgIDxsYWJlbCBmb3I9ImdpdmVuX3RleHQiPk1haW4gdGV4dCB0byBhcHBseSBjaGFuZ2VzIHRvPC9sYWJlbD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGJyPjxicj4KICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT0ic3VibWl0IiBuYW1lPSJhY3Rpb24iPlJlcGxhY2U8L2J1dHRvbj4KICAgICAgICAgICAgPC9mb3JtPgogICAgICAgICAgICAKICAgICAgICAgICAgPGgxPiBSZXN1bHQ6IDwvaDE+PHA+Jyc8L3A+ICAgICAgICA8L2Rpdj4KICAgICAgICAKICAgIDwvYm9keT4KPC9odG1sPgoKCg==]]></response>
+    <comment></comment>
+  </item>
+</items>

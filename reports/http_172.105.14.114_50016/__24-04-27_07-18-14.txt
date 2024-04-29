@@ -1,0 +1,22 @@
+# Dirsearch started Sat Apr 27 07:20:14 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://172.105.14.114:50016/
+
+403   303B   http://172.105.14.114:50016/.ht_wsr.txt
+403   308B   http://172.105.14.114:50016/.htaccess.sample
+403   306B   http://172.105.14.114:50016/.htaccess.bak1
+403   306B   http://172.105.14.114:50016/.htaccess.save
+403   307B   http://172.105.14.114:50016/.htaccess_extra
+403   306B   http://172.105.14.114:50016/.htaccess_orig
+403   304B   http://172.105.14.114:50016/.htaccessBAK
+403   305B   http://172.105.14.114:50016/.htaccessOLD2
+403   306B   http://172.105.14.114:50016/.htaccess.orig
+403   304B   http://172.105.14.114:50016/.htaccess_sc
+403   304B   http://172.105.14.114:50016/.htaccessOLD
+403   296B   http://172.105.14.114:50016/.htm
+403   297B   http://172.105.14.114:50016/.html
+403   302B   http://172.105.14.114:50016/.htpasswds
+403   306B   http://172.105.14.114:50016/.htpasswd_test
+403   303B   http://172.105.14.114:50016/.httr-oauth
+200   205B   http://172.105.14.114:50016/Dockerfile
+200     0B   http://172.105.14.114:50016/flag.php
+403   306B   http://172.105.14.114:50016/server-status/
+403   305B   http://172.105.14.114:50016/server-status
